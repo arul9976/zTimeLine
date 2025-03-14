@@ -87,7 +87,7 @@ body {
     height: 100%;
     top: 0;
     right: 0;
-    background: url(/images/land_zoho.webp) no-repeat;
+    background: url(./images/land_zoho.webp) no-repeat;
     background-size: var(--scale);
     filter: brightness(var(--brighness));
     background-position: center;
@@ -120,7 +120,7 @@ nav .logo {
     transition: 300ms;
     cursor: pointer;
     /* animation: 1s fadeup; */
-    background: url(/images/zoho-one-zoho.gif) no-repeat;
+    background: url(./images/zoho-one-zoho.gif) no-repeat;
     background-size: contain;
     width: 10em;
     height: 100%;
