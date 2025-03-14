@@ -78,7 +78,7 @@ ul li {
 .leftNav .logo {
     width: 7em;
     height: 3em;
-    background: url(./images/common/zoho-logo-web.svg) no-repeat;
+    background: url(../images/common/zoho-logo-web.svg) no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -86,7 +86,7 @@ ul li {
 .rightNav .search {
     width: 1em;
     height: 1em;
-    background: url(./images/common/zh-searchicon.svg) no-repeat;
+    background: url(../images/common/zh-searchicon.svg) no-repeat;
     background-position: center;
     background-size: cover;
 }
