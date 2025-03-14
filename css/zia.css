@@ -1,0 +1,468 @@
+@font-face {
+    font-family: "Zoho_Puvi_Regular";
+    src: url("https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Regular.eot") format("embedded-opentype"), url("https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Regular.woff2") format("woff2"), url("https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Regular.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Zoho_Puvi_Bold";
+    src: url("https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Bold.eot") format("embedded-opentype"), url("https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Bold.woff2") format("woff2"), url("https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Bold.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Zoho_Puvi_SemiBold";
+    src: url("https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Semibold.eot") format("embedded-opentype"), url("https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Semibold.woff2") format("woff2"), url("https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Semibold.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Zoho_Puvi_ExtraBold";
+    src: url("https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Extrabold.eot") format("embedded-opentype"), url("https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Extrabold.woff2") format("woff2"), url("https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Extrabold.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+
+:root {
+    --conic-gradient-angle: 300deg;
+
+}
+
+@property --conic-gradient-angle {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 300deg;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Relative", sans-serif;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: "Zoho_Puvi_Regular", sans-serif;
+    transition: 400ms;
+    /* transition: 300ms; */
+}
+
+body {
+    height: 100%;
+
+}
+
+
+
+.container {
+    height: 100%;
+}
+
+/* 
+.container>* {
+    padding: 0 .5em;
+} */
+
+nav,
+.leftNav,
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    background: #fff;
+
+    padding: 10px;
+}
+
+ul li {
+    cursor: pointer;
+}
+
+.leftNav .logo {
+    width: 7em;
+    height: 3em;
+    background: url(/images/common/zoho-logo-web.svg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.rightNav .search {
+    width: 1em;
+    height: 1em;
+    background: url(/images/common/zh-searchicon.svg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.rightNav ul li:nth-child(2) {
+    margin-right: 2em;
+}
+
+.rightNav a {
+    text-decoration: none;
+    color: red;
+    font-size: .8em;
+}
+
+
+
+main .wraper {
+    max-width: calc(1640px - 20%);
+    width: 100%;
+    min-width: 270px;
+    margin: auto;
+    padding: 1.5em 0;
+}
+
+.subLogo img {
+    width: 12em;
+}
+
+.subNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subNav ul {
+    display: flex;
+    gap: 2em;
+}
+
+.subNav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+
+    height: 3em;
+    background: var(--clr);
+    width: max-content;
+    padding: 1em 1em;
+    font-size: 1.3em;
+    display: grid;
+    place-items: center;
+    font-family: "Zoho_Puvi_SemiBold";
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 5px;
+
+
+}
+
+main {
+    width: 100%;
+}
+
+main._1 {
+    background-size: cover;
+    background-position: center;
+
+}
+
+main._2 .containerBox .rightBar .containerBox {
+    justify-content: flex-start;
+    gap: 2em;
+}
+
+.text1,
+.text2 {
+    width: 100%;
+    font-family: "Zoho_Puvi_SemiBold";
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    gap: .5em;
+
+}
+
+main._2 .rightBar .containerBox>.text2 {
+    width: max-content;
+    text-align: justify;
+}
+
+main._2 .rightBar .containerBox>.text2::after {
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    right: 0;
+    height: .8px;
+
+    width: 100%;
+    background: #000;
+}
+
+.text8,
+.text5 {
+    font-size: 8em;
+    font-family: "Zoho_Puvi_Bold";
+    min-width: 340px;
+    width: 100%;
+
+    text-align: start;
+    margin: .5em 0;
+}
+
+.text5 {
+    font-size: 3.3em;
+    line-height: 1.5;
+}
+
+.text4 {
+    font-size: 1.8em;
+    font-family: "Zoho_Puvi_SemiBold";
+    text-align: start;
+    color: var(--clr);
+    line-height: 1.5;
+    width: 80%;
+    min-width: 270px;
+
+}
+
+.containerBox {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.containerBox .box {
+    display: flex;
+    width: 31%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-width: 320px;
+}
+
+
+
+
+.leftBar,
+.rightBar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+}
+
+main._2 .leftBar span {
+    position: relative;
+    margin: 0 .5em;
+
+}
+
+main._2 .leftBar span::after {
+    content: "";
+    width: 43px;
+    height: 43px;
+    border: 1.5px solid;
+    border-radius: 100%;
+    border-color: #2b2de2;
+    transition-delay: 550ms;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transform-origin: center center;
+    animation: 1.5s pulseBorder ease-in-out infinite;
+}
+
+main._2 .leftBar span::before {
+    content: "";
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    border: 2px solid;
+    border-radius: 100%;
+    border-color: var(--clr);
+    transition-delay: 550ms;
+    background: var(--img);
+    background-size: var(--bgsize);
+    background-position: var(--pos);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes pulseBorder {
+    0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.25);
+        opacity: 0;
+    }
+}
+
+main._3 .containerBox {
+    justify-content: space-around;
+}
+
+main._3 .containerBox .box {
+    width: calc(24% - 10px);
+    min-width: 270px;
+    max-width: 400px;
+    position: relative;
+    background: var(--img) no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+    height: 672px;
+
+}
+
+
+main._3 .containerBox .box img {
+    z-index: -1;
+    object-fit: cover;
+    max-width: 400px;
+    height: 672px;
+}
+
+.img1 {
+    height: 257px !important;
+    width: 300px !important;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+}
+
+.headerBox {
+    padding: 2em;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerBox svg {
+    transform: rotate(-45deg);
+}
+
+main._3 .containerBox .box:hover .headerBox svg {
+    transform: rotate(0);
+
+}
+
+@keyframes colorAnime {
+    100% {
+        --conic-gradient-angle: 9deg;
+    }
+}
+
+main._3 .box._4::after {
+
+    animation: 15s colorAnime linear forwards;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: transparent conic-gradient(from var(--conic-gradient-angle) at 53% 31%, #3ca81c .00%, #1b51e1 26.42%, #164fea 42.86%, #3ca818 63.47%, #f56c28 87.53%, #f56c28 100.00%) 0 0 no-repeat padding-box;
+    transform: matrix(-1, 0, 0, -1, 0, 0);
+    border-radius: 4px;
+    -webkit-transition: .9s ease all;
+    -o-transition: .9s ease all;
+    transition: .9s ease all;
+    z-index: -1;
+}
+
+.contentBar>* {
+    padding: 1em;
+    font-family: "Zoho_Puvi_Bold";
+
+
+}
+
+.contentBar .text3 {
+    color: #fff;
+
+}
+
+
+
+
+
+
+@media (max-width: 1460px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1300px) {
+    body {
+        font-size: 12px;
+    }
+
+    nav,
+    .subNav ul {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 900px) {
+    * {
+        text-align: center !important;
+        justify-content: center !important;
+    }
+
+    main._2 .leftBar span {
+        margin: 0 .8em;
+    }
+
+    body {
+        font-size: 10px !important;
+    }
+
+    .text4,
+    .text5 {
+        text-align: center;
+    }
+
+    nav,
+    .subNav ul {
+        display: none;
+    }
+
+    .rightBar {
+        align-items: center;
+    }
+
+    .rightBar>* {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .subNav {
+        justify-content: center;
+    }
+
+    main._3 .containerBox .box {
+        width: 100%;
+    }
+}

@@ -1,0 +1,189 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    background: #f3f3f3;
+    padding: 1em 0;
+
+
+
+}
+
+form input {
+    outline: none;
+}
+
+.footWrapper {
+    width: 100%;
+    margin: auto;
+    min-width: 300px;
+    max-width: 90%;
+
+}
+
+.footNavs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+footer img {
+    max-width: 26em;
+    min-width: 300px;
+    width: 100%;
+    margin: auto;
+}
+
+.imgFoot {
+    display: grid;
+    gap: 1em;
+    width: 30%;
+    min-width: 300px;
+
+}
+
+.footContent {
+    max-width: 70%;
+    min-width: 300px;
+    display: flex;
+    gap: 2em;
+    padding: 0 2em;
+    flex-wrap: wrap;
+    height: max-content;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+}
+
+.contentBox {
+    width: 50%;
+    max-width: 28%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+}
+
+.footText3 {
+    font-size: 1.4em;
+    font-family: "Zoho_Puvi_SemiBold", sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.mailBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 0;
+    border-top: 1px solid #4d4c4c;
+    border-bottom: 1px solid #4d4c4c;
+}
+
+.mail {
+    font-size: 1.5em;
+    font-family: "Zoho_Puvi_SemiBold", sans-serif;
+    color: #007fff;
+
+}
+
+.chooseBrand {
+    padding: 1em 0;
+    width: 100%;
+
+}
+
+.chooseBrand .text3 {
+    text-align: center;
+    font-size: 1.3em;
+    margin: 1em 0;
+    font-family: "Zoho_Puvi_SemiBold", sans-serif;
+
+}
+
+.badge img {
+    max-width: 50%;
+    min-width: 300px;
+    background: #000;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footEnd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+    margin: 2em auto;
+    font-size: .8em;
+    border-collapse: collapse;
+    max-width: 80%;
+    min-width: 300px;
+
+    width: 100%;
+}
+
+footer button {
+    height: 3em;
+    font-weight: bold;
+    padding: 0 1em;
+}
+
+.footForm input {
+    height: 3em;
+    max-width: 35em;
+    padding: 0 1em;
+    width: 80%;
+}
+
+@media (max-width: 1250px) {
+    footer {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 800px) {
+    .contentBox {
+        max-width: 300px;
+        flex-flow: wrap row;
+
+        width: 100%;
+    }
+
+    .footContent {
+        padding: 1em 0;
+    }
+
+    .contentBox>* {
+        width: max-content;
+    }
+
+    .contentBox .footText3 {
+        width: 100%;
+    }
+
+    .mailBar {
+        flex-direction: column;
+    }
+}

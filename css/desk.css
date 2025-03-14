@@ -1,0 +1,1056 @@
+@font-face {
+    font-family: "Zoho_Puvi_Regular";
+    src: url("https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Regular.eot") format("embedded-opentype"), url("https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Regular.woff2") format("woff2"), url("https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Regular.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Zoho_Puvi_Bold";
+    src: url("https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Bold.eot") format("embedded-opentype"), url("https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Bold.woff2") format("woff2"), url("https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Bold.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Zoho_Puvi_SemiBold";
+    src: url("https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Semibold.eot") format("embedded-opentype"), url("https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Semibold.woff2") format("woff2"), url("https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Semibold.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Zoho_Puvi_ExtraBold";
+    src: url("https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Extrabold.eot") format("embedded-opentype"), url("https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Extrabold.woff2") format("woff2"), url("https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Extrabold.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Relative", sans-serif;
+    list-style: none;
+    scroll-behavior: smooth;
+
+    font-family: "Zoho_Puvi_Regular", sans-serif;
+    transition: 200ms;
+}
+
+body {
+    height: 100%;
+
+}
+
+
+
+.container {
+    height: 100%;
+}
+
+
+nav,
+.leftNav,
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    padding: 10px;
+}
+
+ul li {
+    cursor: pointer;
+}
+
+.leftNav .logo {
+    width: 7em;
+    height: 3em;
+    background: url(/images/common/zoho-logo-web.svg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.rightNav .search {
+    width: 1em;
+    height: 1em;
+    background: url(/images/common/zh-searchicon.svg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.rightNav ul li:nth-child(2) {
+    margin-right: 2em;
+}
+
+.rightNav a {
+    text-decoration: none;
+    color: red;
+    font-size: .8em;
+}
+
+
+
+main .wraper {
+    max-width: calc(1440px - 10%);
+    width: 100%;
+    min-width: 270px;
+    margin: auto;
+    padding: 1.5em 0;
+}
+
+.subLogo img {
+    width: 12em;
+}
+
+.subNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subNav ul {
+    display: flex;
+    gap: 2em;
+}
+
+.subNav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text5 {
+    font-size: 4em;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    width: 90%;
+
+    margin: auto;
+}
+
+.headerImg {
+    position: absolute;
+    max-width: 60em;
+    min-width: 270px;
+    bottom: 10em;
+    right: 0;
+    width: 80%;
+
+}
+
+.text4 {
+    font-size: 1.4em;
+}
+
+.header .text5 {
+    width: 100%;
+    font-family: "Zoho_Puvi_ExtraBold";
+    min-width: 270px;
+    max-width: 7em;
+
+}
+
+.header .text4 {
+    font-family: "Zoho_Puvi_Regular";
+    width: 100%;
+    min-width: 270px;
+    line-height: 1.5;
+    max-width: 20em;
+}
+
+.btn {
+
+    height: 3em;
+    background: red;
+    width: max-content;
+    padding: 1em;
+    display: grid;
+    place-items: center;
+    font-family: "Zoho_Puvi_SemiBold";
+    color: #fff;
+
+
+}
+
+
+
+
+
+.leftRightBar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.leftRightBar {
+    margin: auto;
+    width: 100%;
+}
+
+
+.leftBar,
+.rightBar {
+    width: 100%;
+    max-width: 48%;
+    min-width: 270px;
+}
+
+
+main._4 .leftRightBar .rightBar {
+    min-width: 190px;
+}
+
+.imageLR {
+    max-width: 60em;
+    width: 100%;
+    min-width: 270px;
+}
+
+.header .rightBar {
+    background: url(/images/Desk/headerImage.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+form {
+    display: flex;
+    max-width: 380px;
+    width: 100%;
+    min-width: 270px;
+    flex-direction: column;
+    box-shadow: 2px 5px 15px #dfdddd;
+    background: #fff;
+    align-items: stretch;
+    padding: 1.5em;
+    gap: 1em;
+    justify-content: center;
+    border-radius: 10px;
+    margin: auto;
+}
+
+form .text4 {
+    font-family: "Zoho_Puvi_SemiBold" !important;
+
+}
+
+form .inputTag {
+    height: 3.3em;
+    padding: 0 1em;
+    border-radius: 15px;
+    box-shadow: 0 0 2px #222;
+    border: none;
+}
+
+
+form a,
+form .text1 {
+    font-size: .8em;
+    color: #000;
+    font-family: "Zoho_Puvi_SemiBold" !important;
+
+}
+
+.passWord {
+    position: relative;
+}
+
+.passWord input {
+    width: 100%;
+}
+
+.passWord span {
+    position: absolute;
+    top: calc(50% - 8px);
+    right: 16px;
+}
+
+.phoneNum {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.phoneNum input:first-child {
+    border-radius: 10px 0 0 10px;
+}
+
+.phoneNum input:last-child {
+    border-radius: 0 10px 10px 0;
+}
+
+input:read-only {
+    background: #f1f0f0;
+}
+
+.tick {
+    display: flex;
+    align-items: center;
+    gap: .4em;
+}
+
+form .btn {
+    width: 100%;
+    border-radius: 15px;
+    text-transform: uppercase;
+}
+
+form .signIn {
+    display: flex;
+    gap: .5em;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+form .img {
+    width: 5.5em;
+    background: red;
+    background: var(--img) no-repeat;
+    background-size: 1322px auto;
+    height: 36px;
+    background-position: var(--position);
+}
+
+form .img:last-child {
+    width: 3em;
+}
+
+.floatedBar {
+    padding: 2em;
+    border-radius: 10px;
+    max-width: 1440px;
+    box-shadow: 2px 5px 14px #dfdddd;
+    transform: translateY(80px);
+    background: #fff;
+    margin: auto;
+}
+
+.floatedBar .flexer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 100%;
+    min-width: 270px;
+    gap: 1em;
+}
+
+.floatedBar .flexer .box {
+    max-width: 31%;
+    min-width: 270px;
+    display: flex;
+    height: 6em;
+    justify-content: center;
+
+}
+
+
+.greenBar._2 {
+    background: transparent;
+    color: #0b5b42;
+}
+
+.flexer .box .img {
+    background: var(--img) no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100px;
+}
+
+.box .text3 {
+    max-width: 48%;
+    font-size: 1em;
+    line-height: 1.6;
+    height: min-content;
+    margin: auto 0;
+}
+
+.texts {
+    text-align: center;
+    display: grid;
+    margin: .5em 0;
+    gap: 1em;
+}
+
+.text4 {
+    font-family: "Zoho_Puvi_SemiBold";
+
+}
+
+.text3 {
+    font-size: 1.5em;
+}
+
+.boxes {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1em;
+    max-width: 90%;
+    width: 100%;
+    margin: auto;
+
+}
+
+.boxes .img {
+    background: url(https://www.zohowebstatic.com/sites/zweb/images/desk/zd-client-logos-all-region-01.svg) no-repeat;
+    background-size: auto;
+    background-position: var(--position);
+    width: 151px;
+    height: 51px;
+
+
+}
+
+main._2,
+main._4 {
+    background: #fff5e7;
+}
+
+
+main._4 .wraper .greenBar {
+    color: #000 !important;
+}
+
+.content {
+    margin-top: 7em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em 3em;
+}
+
+
+.contextVideo {
+    width: 90%;
+    min-width: 270px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    user-select: none;
+    margin: auto;
+}
+
+video {
+    width: 100%;
+
+}
+
+.greenBar,
+.normalBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    color: #fff;
+    background: #0b5b42;
+    padding: 4em 0;
+    border-radius: 25px;
+    flex-direction: column;
+    transform: translateY(-45px);
+}
+
+.normalBar {
+    background: transparent;
+    color: #0b5b42;
+}
+
+.greenBar .flexer,
+.normalBar .flexer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1em;
+    width: 100%;
+    max-width: 80%;
+    min-width: 270px;
+}
+
+.greenBar .text4,
+.normalBar .text4 {
+    font-size: 4em;
+}
+
+.greenBar .text2,
+.normalBar .text2 {
+    text-align: center;
+    max-width: 42em;
+    line-height: 1.5;
+    width: 100%;
+    margin-bottom: 3em;
+    min-width: 270px;
+    font-size: 1.1em;
+}
+
+.greenBar .flexer li,
+.normalBar .flexer li {
+    background: rgba(7, 60, 44, 0.5);
+    color: #fff5e7;
+    padding: .5em 1em;
+    border-radius: 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    text-align: center;
+    margin: 0;
+}
+
+.normalBar .flexer li {
+    background: #0b5b42;
+    color: #fff5e7;
+}
+
+.greenBar .flexer li:hover,
+.normalBar .flexer li:hover {
+    color: #d8ae52;
+}
+
+img {
+    width: 100%;
+}
+
+.greenBar .imageLR {
+    transform: translateY(99px);
+}
+
+.normalBar .imageLR {
+    transform: translateY(176px);
+}
+
+main.light {
+    background: #358f73;
+    border-radius: 0;
+}
+
+.greenBar.light {
+    background: transparent;
+    padding-top: 10em;
+}
+
+
+
+
+main._4 .flexer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    flex-wrap: wrap;
+
+}
+
+
+
+main._4 .flexer .box1 {
+    width: 31%;
+    min-width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1em;
+    margin: 2em 0;
+    padding: 2em;
+
+}
+
+.box1 .text2 {
+    font-size: 1.5em;
+}
+
+.box1 .text1 {
+    max-width: 95%;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.box1 .btnLight,
+.flexer li {
+    font-size: 1.2em;
+    color: #0b5b42;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 600ms;
+    gap: .5em;
+    min-width: 200px;
+}
+
+.btnLight svg,
+.flexer li svg {
+    transform: translateY(1px);
+    transition: 600ms;
+
+}
+
+.btnLight:hover svg,
+.flexer li:hover svg {
+    transform: translateX(6px);
+    transition: 600ms;
+
+
+}
+
+.box1 .img {
+    background: var(--bgImg) no-repeat;
+    background-size: cover;
+    height: 8em;
+    width: 7em;
+}
+
+
+
+main._4 .text3 {
+    font-size: 3em;
+    font-family: "Zoho_Puvi_Bold";
+
+}
+
+main._4 .text2,
+main._4 .text3 {
+    max-width: 40%;
+    width: 100%;
+    text-align: center;
+    min-width: 270px;
+}
+
+main._4 .text2 {
+    max-width: 50%;
+    font-size: 1.5em;
+}
+
+main._4 .leftRightBar .text2,
+main._4 .leftRightBar .text3 {
+    text-align: start;
+    max-width: 90%;
+    margin: 1em 0;
+
+}
+
+.leftRightBar .flexer li {
+    margin: 1em 0;
+
+}
+
+main._4 .leftRightBar {
+    width: 80%;
+    color: #fff5e7;
+}
+
+main._4 .leftRightBar .rightBar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    display: flex;
+    justify-content: center;
+}
+
+main._4 .leftRightBar .rightBar .img {
+    background: url(https://www.zohowebstatic.com/sites/zweb/images/desk/zd_integrat_zlogo.svg) no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 90%;
+    height: 470px;
+    min-width: 100px;
+    position: relative;
+}
+
+main._4 .greenBar._new .rightBar .img {
+    max-width: 200px;
+}
+
+@media (max-width: 650px) {
+    main._4 .leftRightBar .rightBar .img {
+        display: none;
+    }
+}
+
+main._4 .greenBar {
+    padding: 7em 0;
+}
+
+@keyframes floating {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, 8px);
+        -webkit-transform: translate(0, 8px);
+    }
+}
+
+main._4 .rightBar span {
+    height: 47px;
+    width: var(--width);
+    display: block;
+    position: absolute;
+    background: var(--logo);
+    background-position: var(--pos);
+    top: var(--top);
+    left: var(--left);
+    right: var(--right);
+    bottom: var(--bottom);
+    animation: floating ease-in-out infinite;
+    animation-duration: var(--duraction);
+    transition: all ease .65s;
+}
+
+
+
+.wraper._6 .imageLR {
+    height: 400px;
+}
+
+main._4.fff .greenBar.light .leftBar {
+    color: #000;
+}
+
+
+
+main.fff .greenBar.light .rightBar .img {
+    background: url(/images/Desk/image5.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+}
+
+main._4.fff .imageLR {
+    transform: none;
+}
+
+main._4.fff .flexer li {
+    background: #0b5b42;
+}
+
+main._5 {
+    margin: 3em 0;
+    padding: 2em 0;
+}
+
+
+main._5 .leftBar {
+    height: 100%;
+    max-width: 38%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1em;
+    gap: 4em;
+    border-right: 1px solid #888;
+}
+
+main._5 .rightBar {
+    max-width: 58%;
+
+}
+
+
+main._5 .leftBar .text4 {
+    max-width: 80%;
+}
+
+.arrows {
+    display: flex;
+    gap: 1em;
+}
+
+.arrows .leftArr,
+.arrows .rightArr {
+    padding: .8em;
+    box-shadow: 0 0 1.5px #0b5b42;
+    border-radius: 16px;
+}
+
+main._5 .text4 {
+    font-size: 2.5em;
+}
+
+.arrows .leftArr {
+    box-shadow: 0 0 1.5px #88888894;
+}
+
+.arrows .leftArr svg {
+    fill: #88888894;
+
+}
+
+.arrows svg {
+    transform: translateY(2px);
+    fill: #0b5b42;
+}
+
+.person {
+    display: flex;
+    margin: 1em 0;
+}
+
+.person .img {
+    background-image: url("//www.zohowebstatic.com/sites/zweb/images/desk/mble_sprite_2x.png");
+    background-size: 1322px auto;
+    display: inline-block;
+
+    background-position: -653px -67px;
+    width: 89px;
+    height: 89px;
+}
+
+.person {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    width: 60%;
+
+}
+
+.rightBar>* {
+    margin: 1em auto;
+}
+
+main._5 .flexer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main._5 .wraper {
+    width: 90%;
+}
+
+.person .texts {
+    text-align: start;
+    margin: 0 .5em;
+    gap: 0;
+}
+
+.person .text3,
+.person .text2 {
+    width: 100%;
+    height: max-content;
+}
+
+.person .text2 {
+    width: 7em;
+    line-height: 1.5;
+}
+
+.img.sec {
+    background: var(--img);
+    background-position: -287px -398px;
+    width: 214px;
+    height: 36px;
+    margin: 1em 0;
+
+}
+
+
+
+main._5 .flexer li {
+    margin: 2em 2em 1em 0 !important;
+}
+
+main._4 .imageLR .img {
+    background: var(--img) no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+
+main._4.size {
+    max-width: 90%;
+    border-radius: 25px;
+    margin: auto;
+}
+
+main._4.size .text3 {
+    max-width: 60%;
+}
+
+
+.wraper._6 .flexer li {
+    position: relative;
+}
+
+.wraper._6 .flexer li::after {
+    position: absolute;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    background-position: -332px -296px;
+    width: 19px;
+    left: -40px;
+    height: 20px;
+    background-image: url(https://www.zohowebstatic.com/sites/zweb/images/desk/zd_sprite.svg);
+    display: inline-block;
+}
+
+.wraper._6 .text3 {
+    margin: 0 auto;
+}
+
+
+
+main._4 .wraper.light {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main._4 .wraper.light .flexer {
+    margin: 2em 0;
+    gap: 3em;
+}
+
+.flexer li {
+    position: relative;
+}
+
+main._4 .wraper.light .flexer li::after {
+    content: '';
+    background-image: url(https://www.zohowebstatic.com/sites/zweb/images/desk/zd_sprite.svg);
+
+    position: absolute;
+    left: -40px;
+    top: 0;
+    background-position: -377px -294px;
+    width: 35px;
+    height: 26px;
+}
+
+.flexer .btn {
+    border-radius: 20px;
+    padding: 0 5em;
+}
+
+.flexer .btn:last-child {
+    background: transparent;
+    border: 1px solid;
+    color: #000;
+}
+
+
+
+
+main._4.clr {
+    background: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1460px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1300px) {
+    body {
+        font-size: 12px;
+    }
+
+    nav,
+    .subNav ul {
+        display: none;
+    }
+
+    .greenBar {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 900px) {
+    body {
+        font-size: 10px;
+    }
+
+    .text4,
+    .text5 {
+        text-align: center;
+    }
+
+    nav,
+    .subNav ul {
+        display: none;
+    }
+
+    .greenBar .flexer {
+        justify-content: center;
+    }
+
+
+}
+
+@media (max-width: 750px) {
+
+    .subNav,
+    .leftRightBar {
+        justify-content: center;
+    }
+
+    main._4 .flexer {
+        justify-content: center;
+    }
+
+
+}

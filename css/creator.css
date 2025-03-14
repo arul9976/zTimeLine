@@ -1,0 +1,1006 @@
+@font-face {
+    font-family: "Zoho_Puvi_Regular";
+    src: url("https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Regular.eot") format("embedded-opentype"), url("https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Regular.woff2") format("woff2"), url("https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Regular.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Zoho_Puvi_Bold";
+    src: url("https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Bold.eot") format("embedded-opentype"), url("https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Bold.woff2") format("woff2"), url("https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Bold.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Zoho_Puvi_SemiBold";
+    src: url("https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Semibold.eot") format("embedded-opentype"), url("https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Semibold.woff2") format("woff2"), url("https://static.zohocdn.com/zohofonts/zohopuvi/4.0/Zoho_Puvi_Semibold.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Zoho_Puvi_Regular", sans-serif;
+    scroll-behavior: smooth;
+
+    /* transition: 300ms; */
+}
+
+body {
+    height: 100%;
+
+}
+
+.container {
+    height: 100%;
+}
+
+nav,
+.leftNav,
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    /* background: red; */
+    padding: 10px;
+}
+
+ul li {
+    cursor: pointer;
+}
+
+.leftNav .logo {
+    width: 7em;
+    height: 3em;
+    background: url(/images/common/zoho-logo-web.svg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.rightNav .search {
+    width: 1em;
+    height: 1em;
+    background: url(/images/common/zh-searchicon.svg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.rightNav ul li:nth-child(2) {
+    margin-right: 2em;
+}
+
+.rightNav a {
+    text-decoration: none;
+    color: red;
+    font-size: .8em;
+}
+
+header {
+    color: #fff;
+    height: max-content;
+
+
+}
+
+.wraper {
+    margin: auto;
+    height: 80dvh;
+    background: #25349a;
+
+}
+
+.wraper>* {
+    margin: auto;
+}
+
+header .subNav {
+    display: flex;
+    max-width: 1340px;
+    padding: 1em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .subNav img {
+    width: 10em;
+}
+
+.subNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subNav ul {
+    display: flex;
+    gap: 2em;
+}
+
+.subNav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+header .content {
+    height: 100%;
+    max-width: 1340px;
+    display: flex;
+    align-items: center;
+    padding: 0 2em;
+    justify-content: center;
+}
+
+.text4 {
+    font-size: 3.5em;
+}
+
+.text3 {
+    font-size: 1.5em;
+}
+
+header .text4 {
+    font-weight: bold;
+    max-width: 75%;
+    width: 100%;
+    min-width: 300px;
+    font-family: "Zoho_Puvi_Bold", sans-serif;
+
+
+}
+
+header .text3 {
+    max-width: 80%;
+    line-height: 1.5;
+    width: 100%;
+    min-width: 300px;
+}
+
+header .left {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+header .left .play {
+    display: flex;
+    align-items: center;
+    gap: .4em;
+}
+
+.play svg {
+    fill: #fff;
+}
+
+.play a {
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #fff;
+
+}
+
+.right {
+    width: 100%;
+    height: 80%;
+}
+
+.right form {
+    display: flex;
+    max-width: 430px;
+    min-width: 300px;
+    margin: auto;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.right form input.inp {
+    height: 3em;
+    padding: 0 1em;
+    background: #1c2774;
+    color: #fff;
+    font-size: 1.1em;
+    border: none;
+    box-shadow: 0 0 1px #e0dede;
+}
+
+.right form .terms {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    font-family: "Zoho_Puvi_SemiBold", sans-serif;
+    font-weight: 700;
+
+}
+
+header button {
+    height: 3em;
+    font-weight: bold;
+    padding: 0 1em;
+    font-size: 1.1em;
+    background: red;
+    border: none;
+    cursor: pointer;
+
+    color: #fff;
+}
+
+.leftBtn {
+    display: none;
+}
+
+.right form b {
+    font-family: "Zoho_Puvi_SemiBold", sans-serif;
+
+}
+
+.floatedBar {
+    min-width: 300px;
+    width: 80%;
+    max-width: 1240px;
+    margin: auto;
+    background: #fff8ed;
+    color: #000;
+    border-radius: 10px;
+    padding: 1em;
+
+}
+
+@media (min-width: 650px) {
+    .floatedBar {
+        transform: translateY(-100px);
+
+    }
+
+    .forImg {
+        height: 60dvh;
+    }
+}
+
+
+.brands {
+    display: flex;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+
+}
+
+.floatedBar .text2 {
+    height: 20%;
+    font-size: 1.4em;
+    text-align: center;
+    margin: 1em 0;
+    width: 100%;
+    order: -1;
+}
+
+.box {
+    height: 9em;
+    width: 100%;
+    padding: .5em;
+    display: grid;
+    grid-template-rows: 40% 60%;
+    place-items: center;
+    flex: 2;
+    border-radius: 10px;
+
+    border: 1px dotted #000;
+}
+
+.box .text9 {
+    font-size: 3.5em;
+    font-family: "Zoho_Puvi_Bold", sans-serif;
+
+}
+
+.box .text3 {
+    text-align: center;
+    max-width: 100% !important;
+    font-size: 1.3em;
+    font-family: "Zoho_Puvi_SemiBold", sans-serif;
+
+}
+
+.box.brand {
+    grid-template-rows: 1fr 1fr;
+    flex: 3;
+    height: 80%;
+    padding: 0;
+    gap: 1em;
+    border: none;
+
+}
+
+.brandIcon {
+    max-width: 100%;
+    border: 1px dotted #000;
+    display: flex;
+    align-content: center;
+    border-radius: 10px;
+    min-width: 100px;
+    width: 100%;
+    height: 4em;
+
+}
+
+.brandIcon .img {
+    width: 80%;
+    background: var(--brandImg) no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 70%;
+    margin: auto;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 2em 0;
+    gap: 2em;
+    flex-direction: column;
+}
+
+.text5 {
+    text-align: center;
+}
+
+.text5,
+.textBold {
+    font-size: 3em;
+    width: 90%;
+    font-family: "Zoho_Puvi_SemiBold", sans-serif;
+
+}
+
+.textBold {
+    font-size: 2em;
+
+}
+
+.text2 {
+    line-height: 2;
+
+}
+
+.mainWrapper {
+    height: 70%;
+    min-width: 300px;
+    width: 80%;
+    max-width: 1240px;
+
+}
+
+@media (max-width: 908px) {
+    body {
+        font-size: 12px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .leftBtn {
+        display: block;
+    }
+
+
+    .brands {
+        flex-direction: column;
+    }
+
+    .floatedBar .box.brand {
+        display: flex;
+    }
+
+    .brandIcon {
+        height: 6em !important;
+        width: 100% !important;
+    }
+
+    .floatedBar .text2 {
+        order: 0 !important;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .left {
+        align-items: start;
+    }
+
+
+}
+
+.boxMain .img {
+    background: var(--mainImg) no-repeat;
+    background-size: contain;
+    background-position: start;
+    width: 25em;
+    height: 20em;
+    margin-bottom: .5em;
+}
+
+.boxMain {
+    background: var(--bgColor);
+    height: 35em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 1px #000;
+    width: 100%;
+}
+
+
+.btn {
+    background: #007fff;
+    width: max-content;
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 1.1em;
+    padding: .7em 1.4em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+@media (max-width: 600px) {
+
+
+    .subNav {
+        justify-content: center !important;
+    }
+
+    .subNav ul {
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 1140px) {
+    .boxMain>.text2 {
+        max-width: 360px;
+    }
+}
+
+.wrapperSelector {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main.black {
+    background: #000;
+    color: #fff;
+}
+
+.wrapperSelector li {
+    padding: 1em 3em;
+    box-shadow: 0 0 1px #fff;
+    border: 1px solid transparent;
+    font-family: "Zoho_Puvi_SemiBold", sans-serif;
+    transition: 200ms;
+
+}
+
+.wrapperSelector li:hover {
+    box-shadow: 0 0 0 0 transparent;
+    border: 1px solid #007fff;
+    color: #007fff;
+    transition: 200ms;
+
+}
+
+main.black .btn.t {
+    border: 1px solid #007fff;
+    color: #007fff;
+    background: transparent;
+    cursor: pointer;
+}
+
+main.black .btn {
+    width: max-content;
+}
+
+.boxBlack {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    max-width: 1240px;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxBlack .left,
+.boxBlack .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+}
+
+.boxBlack .right {
+    gap: 3em;
+}
+
+@media (max-width:1070px) {
+    .boxBlack {
+        flex-direction: column;
+
+    }
+
+}
+
+
+@media (max-width:800px) {
+    .wrapperSelector {
+        display: none;
+    }
+
+
+}
+
+.imgWrapper {
+    padding: 1em;
+    background: transparent linear-gradient(134deg, #401ac9 0, #d11414 100%) 0 0 no-repeat padding-box;
+    height: 25em;
+
+    border-radius: 10px;
+}
+
+.rightImg {
+    background: url(/images/creator/prebuild-integration.webp) no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.arrowBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    padding: 4em 1em 0 0;
+    gap: 2em;
+}
+
+
+.arrowBar .page {
+    font-family: "Zoho_Puvi_Bold", sans-serif;
+
+}
+
+.sliderMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 70dvh;
+    gap: 3em;
+
+}
+
+.sliderMain>.text2 {
+    width: 80%;
+    text-align: center;
+    min-width: 300px;
+}
+
+.slider {
+    display: grid;
+    grid-template-columns: repeat(6, 12em);
+
+    gap: 1em;
+    justify-content: start;
+    max-width: 1240px;
+    width: 80%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    min-width: 300px;
+    padding: 0 1em;
+}
+
+.sliderBox {
+    height: max-content;
+    background: var(--clr);
+    display: grid;
+    gap: .5em;
+    grid-template-rows: 70% 30%;
+    padding: 1em;
+    border-radius: 10px;
+
+}
+
+
+
+
+.sliderBox .boxImg {
+    background: var(--img) no-repeat;
+    background-size: contain;
+    height: 6em;
+    background-position: start;
+}
+
+.slider .text2 {
+    font-size: 1.3em;
+    line-height: 1.4;
+}
+
+.blackBar {
+    padding: 6em 0;
+    background: #000;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+
+}
+
+.blackBar .text2 {
+    width: 100%;
+    text-align: center;
+}
+
+.wrapperBox {
+    max-width: 500px;
+    min-width: 300px;
+    background: #1d1c1c;
+    border-radius: 10px;
+    display: flex;
+    padding: 2em;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    width: 80%;
+}
+
+.wrapperBox span {
+    position: absolute;
+    bottom: 0;
+    right: -24px;
+}
+
+.wrapperBox ul {
+    gap: 1em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrapperBox ul li {
+    width: 47%;
+
+}
+
+.wrapperBox .text3 {
+    font-family: "Zoho_Puvi_Bold", sans-serif;
+
+}
+
+.wrapperBox:nth-child(2) ul {
+    width: 48%;
+}
+
+.cor {
+    background: linear-gradient(to bottom, rgb(216, 216, 30), rgb(236, 55, 85), rgb(228, 45, 228), rgb(180, 0, 252));
+    border-radius: 10px 10px 0 0;
+
+    width: 50%;
+}
+
+.wrapperBox:nth-child(2) ul li {
+    width: 100%;
+}
+
+.colored {
+    display: grid;
+    gap: 1em;
+
+    background: linear-gradient(to bottom, rgb(216, 216, 30), rgb(236, 55, 85), rgb(228, 45, 228), rgb(180, 0, 252));
+    height: 16em;
+    padding: 2em 1.5em;
+    width: max-content;
+    border-radius: 10px 10px 0 0;
+}
+
+
+
+.flexer {
+    display: flex;
+    justify-content: space-between;
+}
+
+._bb {
+    border-bottom: 1px solid rgb(168, 166, 166);
+}
+
+.blackBar .text3._n {
+    width: 100%;
+}
+
+.userWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.userWrapper .persons {
+    width: 16em;
+    height: 26em;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 1px #e0dede;
+    border-collapse: collapse;
+    padding: 1em;
+    transition: 300ms;
+
+}
+
+.userWrapper .persons .img {
+    flex: 9;
+    background: var(--img) no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: var(--clr);
+    border-radius: 10px;
+}
+
+
+.userWrapper .persons .text2 {
+    flex: 1;
+    text-align: center;
+    font-size: 1.1em;
+    font-family: "Zoho_Puvi_Bold", sans-serif;
+
+}
+
+.persons span {
+    margin: auto;
+}
+
+.persons:hover {
+    transform: scale(1.1);
+    transition: 300ms;
+    border: none;
+    box-shadow: none;
+    border-radius: 10px;
+    background: #1d1c1c;
+}
+
+
+.persons:hover svg {
+    fill: #007fff;
+}
+
+
+.isgBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    gap: 2em;
+    border-radius: 10px;
+    border: 1px solid #007fff;
+    padding: 2em;
+
+}
+
+
+.isgBar img {
+    width: 6em;
+}
+
+.isgBar .text3 {
+    color: #007fff;
+    font-size: 1.2em;
+    font-family: "Zoho_Puvi_Bold", sans-serif;
+    text-transform: uppercase;
+}
+
+.isgBar .text2 {
+    max-width: 70%;
+    margin-top: .5em;
+}
+
+.isgBar a {
+    align-self: flex-end;
+    font-size: 1.3em;
+    color: #007fff;
+    text-decoration: none;
+    position: relative;
+}
+
+.isgBar a::after {
+    position: absolute;
+    content: "";
+    background: #007fff;
+    ;
+    width: 100%;
+    height: 2px;
+    bottom: -3px;
+
+    right: 0;
+}
+
+@media (max-width: 800px) {
+    .isgBar {
+        flex-direction: column;
+    }
+}
+
+.whiteBar {
+    width: 80%;
+    margin: auto;
+    padding: 3em 0;
+}
+
+.whiteBar .text4 {
+    text-align: center;
+}
+
+.boxy {
+    width: 22em;
+    box-shadow: 0 0 1px #474747;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2em;
+    border: none;
+    position: relative;
+    padding: 4em 1em 1em 1em;
+    margin: 6em .5em .5em 0;
+}
+
+.whiteBar .boxy .btn {
+    border: 1px solid #007fff;
+    background: transparent;
+    color: #007fff;
+}
+
+.whiteBar>.btn {
+    margin: auto;
+}
+
+
+.wrapperCustomers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+}
+
+.boxy::after {
+    position: absolute;
+    content: "";
+    width: 7em;
+    height: 7em;
+    background: var(--img) no-repeat;
+    background-size: contain;
+    background-position: center;
+    top: -4em;
+    left: calc(25% - 3.5em);
+}
+
+.forImg .wrapper {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 2em;
+}
+
+@media (max-width: 1000px) {
+    .forImg .wrapper {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 630px) {
+    .leftimg img {
+        width: 10em !important;
+    }
+}
+
+.boxy .name {
+    color: #007fff;
+}
+
+.forImg {
+    color: #fff;
+    width: 100%;
+    background: #13012a;
+
+}
+
+.forImg .rightText .text3 {
+    font-size: 2.8em;
+}
+
+.forImg .wrapper>* {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.forImg .text3 {
+    font-family: "Zoho_Puvi_Bold", sans-serif;
+
+}
+
+.forImg .rightText>* {
+    text-align: start;
+
+    margin: 0;
+}
+
+.leftimg {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 100%;
+}
+
+.leftimg>img {
+    width: 15em;
+    z-index: 10;
+}
+
+.leftimg::before {
+    position: absolute;
+    content: "";
+    background: url('https://www.zohowebstatic.com/sites/zweb/images/creator/home/starter-guide-bg.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.endBar {
+    width: 80%;
+    margin: auto;
+    height: 40dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.endBar .text5 {
+    max-width: 60%;
+    min-width: 300px;
+    width: 100%;
+}
+
+.endBar .btn {
+    background: #d11414;
+    font-size: 1em;
+}
